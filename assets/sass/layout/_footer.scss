@@ -8,7 +8,8 @@
 
 	#footer {
 		.inner {
-			@include padding(5em, 0);
+			// @include padding(5em, 0);
+			@include padding(3em, 2em);
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 			@include vendor('flex-wrap', 'wrap');
@@ -18,6 +19,12 @@
 			> * {
 				width: 100%;
 			}
+			background-color:		_palette(bg);
+
+			background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+
+			background-size:		auto,
+									cover;
 
 			form {
 				margin: 0 _size(section-spacing, large) 0 0;
@@ -60,10 +67,10 @@
 
 		@include breakpoint('<=large') {
 
-			background-color:		_palette(bg);
+			// background-color:		_palette(bg);
 
-			background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.2), transparentize(_palette(bg), 0.2)),
-									url('../../images/bg.jpg');
+			// background-image:		linear-gradient(to top, transparentize(_palette(bg), 0.8), transparentize(_palette(bg), 0.8)),
+			// 						url('../../images/bg.jpg');
 
 			background-size:		auto,
 									cover;

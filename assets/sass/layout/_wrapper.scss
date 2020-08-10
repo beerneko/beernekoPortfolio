@@ -143,7 +143,8 @@
 		}
 
 		.inner {
-			@include padding(3em, 0);
+			// @include padding(3em, 0);
+			@include padding(3em, 2em);
 			margin: 0 auto;
 			width: _size(inner);
 		}
@@ -154,6 +155,12 @@
 
 			&.style#{$i} {
 				background-color: $color;
+				.inner{
+					background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+	
+					  background-size:		auto,
+											cover;
+					}
 				@include wrapper-edges-color($color);
 			}
 		}
