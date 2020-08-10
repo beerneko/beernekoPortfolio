@@ -10,8 +10,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/sass/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/sass/noscript.css" /></noscript>
+	<noscript><link rel="stylesheet" href="assets/sass/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload">
@@ -57,17 +56,33 @@
 		<section id="wrapper">
 
 			<!-- One -->
-			<section id="three" class="wrapper spotlight style3">
+			<section id="three" class="wrapper spotlight style1">
 				<div class="inner">
-					<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Nullam dignissim</h2>
-						<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet
-							turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla
-							dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-						<a href="#" class="special">Learn more</a>
+						<h2 class="major">About Me</h2>
+						<p>System Engineer in AS/400, PHP, Java, Javascript at both the USA and Japan. Recently becoming certified MCSA in Microsoft SQL 2016 Database Development.
+							I have over 7 years of working experience at the Nebraska State Government includes Nebraska Supreme court, and have more independent contracts in Google Apps Script, Visual Basic, WordPress, and other various computer languages in the past 17 years.
+							As a personal note, in 2019, I needed to go back and forth between the United State and Japan to act as a caregiver to a sick family member in Japan. During that time, I really found my passion for studying new technologies and working as a freelance, which is why I'm so excited about reopening my new IT carrier.</p>
+						<section class="features">
+							<article>
+								<a href="#" class="image2 fit"><img src="images/oboero.png" alt="" /></a>
+								<h3 class="major">Sed feugiat lorem</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
+									ultrices.</p>
+								<a href="#" class="special">Learn more</a>
+							</article>
+							<article>
+								<a href="#" class="image2 fit"><img src="images/web.png" alt="" /></a>
+								<h3 class="major">Nisl placerat</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus
+									ultrices.</p>
+								<a href="#" class="special">Learn more</a>
+							</article>
+						</section>
+						<ul class="actions">
+							<li><a href="#" class="button">Browse All</a></li>
+						</ul>
 					</div>
-				</div>
 			</section>
 
 			<!-- Two -->
@@ -75,10 +90,10 @@
 				<div class="inner">
 					<a href="#" class="image" style="opacity: 1;"><img src="images/pic02.jpg" alt="" /></a>
 					<div class="content">
-						<h2 class="major">Tempus adipiscing</h2>
-						<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet
-							turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla
-							dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
+						<h2 class="major">Certificates</h2>
+						<p><br>MCSA (SQL 2016 Database Development) MCID: 989364484 January 2020
+							<br>ZCPE (ZEND Certified PHP Engineer) November 2016 https://www.zend-zce.com/en/yellow-pages/ZEND028919
+							<br>MCP (Microsoft Certified Professional) Developing and Implementing Web Applications with Microsoft Visual Basic. NET October 2006</p>
 						<a href="#" class="special">Learn more</a>
 					</div>
 				</div>
@@ -145,14 +160,12 @@
 		<section id="footer">
 			<div class="inner">
 				<h2 class="major">Get in touch</h2>
-				<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce
-					tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
-					tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-
-				<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-					<p class="hidden">
+				<p>Please contact me with either Japanese or English.</p>
+				<form id="my-form" name="contact" method="POST" data-netlify="true">
+				<!-- <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true"> -->
+					<!-- <p class="hidden">
 						<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-					</p>
+					</p> -->
 					<p>
 						<label>Your Name: <input type="text" name="name" /></label>
 					</p>
@@ -160,10 +173,10 @@
 						<label>Your Email: <input type="email" name="email" /></label>
 					</p>
 					<p>
-						<label>Your Role: <select name="role[]" multiple>
-								<option value="leader">Leader</option>
-								<option value="follower">Follower</option>
-							</select></label>
+						<!-- <label>Your Role: <select name="role[]" multiple>
+							<option value="leader">Leader</option>
+							<option value="follower">Follower</option>
+						</select></label> -->
 					</p>
 					<p>
 						<label>Message: <textarea name="message"></textarea></label>
@@ -220,7 +233,16 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		$("#my-form").submit(function(e) {
+		e.preventDefault();
 
+		var $form = $(this);
+		$.post($form.attr("action"), $form.serialize()).then(function() {
+			alert("Thank you!");
+		});
+		});	
+	</script>
 </body>
 
 </html>
