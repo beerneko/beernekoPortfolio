@@ -2221,6 +2221,8 @@ input[type="radio"] + label:before {
 .image.main img {
   width: 100%;
 }
+
+/* Additional by B*/
 /* Image squear */
 .image2 {
   border: 5px;
@@ -2273,6 +2275,19 @@ input[type="radio"] + label:before {
 .image2.main img {
   width: 100%;
 }
+
+/* Language control */
+.Jpn {
+  text-align: left;
+  display: none;
+  cursor: pointer;
+}
+
+.Eng {
+  text-align: left;
+  cursor: pointer;
+}
+
 
 /* List */
 ol {
