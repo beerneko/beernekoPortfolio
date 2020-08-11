@@ -9,6 +9,7 @@
 	<title>Yuri's Web</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta property="og:image" content="//https://beernekoportfolio.netlify.app///images/oboeroLogo.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/sass/main.css" />
 	<noscript>
@@ -221,8 +222,8 @@
 						Beerneko<br />
 						Fort Worth, TX
 					</li>
-					<li class="icon solid fa-email">beerneko@yahoo.com</li>
-					<li class="icon solid fa-envelope"><a href="https://nekonya.netlify.app/">Blog</a></li>
+					<li class="icon solid fa-envelope">beerneko@yahoo.com</li>
+					<li class="icon solid fas fa-blog"><a href="https://nekonya.netlify.app/">Blog</a></li>
 					<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/yurikobingman/">LinkedIn</a></li>
 					<li><a href="https://www.microsoft.com/en-us/learning/mcsa-sql2016-database-development-certification.aspx" target="_blank" rel="noopener noreferrer">
 						<img src="images/MCSA.svg" alt="MCSA" style="width:4em;height:4em;margin:0.1em"/></a></li>
@@ -252,7 +253,7 @@
 			var $form = $(this);
 			$.post($form.attr("action"), $form.serialize()).then(function () {
 				alert("Thank you!");
-				$(this).children().trigger("reset");
+				$(this)[0].reset();
 			});
 		});	
 	</script>

@@ -1,4 +1,4 @@
-@import url(d:\beernekoPortfolio\assets\sass\fontawesome-all.min.css);
+@import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
 /*
 	Solid State by HTML5 UP
@@ -101,9 +101,12 @@ body {
   background-color: transparent;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/bg.jpg");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bg.jpg");
-  background-size: auto, cover;
-  background-attachment: fixed, fixed;
-  background-position: center, center;
+  background-size: auto,
+ cover;
+  background-attachment: fixed,
+ fixed;
+  background-position: center,
+ center;
 }
 
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3176,8 +3179,10 @@ body.is-menu-visible #menu .inner {
     background-color: transparent;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/bg.jpg");
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bg.jpg");
-    background-size: auto, cover;
-    background-position: center, center;
+    background-size: auto,
+ cover;
+    background-position: center,
+ center;
     margin-bottom: -6.5em;
   }
 }
@@ -3269,8 +3274,10 @@ body.is-preload #banner p {
     background-color: transparent;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0))), url("../../images/bg.jpg");
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../../images/bg.jpg");
-    background-size: auto, cover;
-    background-position: center, 0% 30%;
+    background-size: auto,
+ cover;
+    background-position: center,
+ 0% 30%;
     margin-bottom: -6.5em;
   }
 }
@@ -3278,8 +3285,10 @@ body.is-preload #banner p {
 @media screen and (max-width: 980px) {
   #wrapper > header {
     padding: 11em 3em 7.375em 3em ;
-    background-size: auto, cover;
-    background-position: center, 0% 0%;
+    background-size: auto,
+ cover;
+    background-position: center,
+ 0% 0%;
     margin-bottom: -4.75em;
   }
   #wrapper > header .inner {
@@ -3290,7 +3299,8 @@ body.is-preload #banner p {
 @media screen and (max-width: 736px) {
   #wrapper > header {
     padding: 6.5em 2em 3em 2em ;
-    background-size: auto, 125%;
+    background-size: auto,
+ 125%;
     margin-bottom: -2.5em;
   }
   #wrapper > header h2 {
@@ -3365,7 +3375,8 @@ body.is-preload #banner p {
 
 .wrapper.style2 .inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 .wrapper.style2:before, .wrapper.style2:after {
@@ -3388,7 +3399,8 @@ body.is-preload #banner p {
 
 .wrapper.style3 .inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 .wrapper.style3:before, .wrapper.style3:after {
@@ -3411,7 +3423,8 @@ body.is-preload #banner p {
 
 .wrapper.style4 .inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 .wrapper.style4:before, .wrapper.style4:after {
@@ -3434,7 +3447,8 @@ body.is-preload #banner p {
 
 .wrapper.style5 .inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 .wrapper.style5:before, .wrapper.style5:after {
@@ -3457,7 +3471,8 @@ body.is-preload #banner p {
 
 .wrapper.style6 .inner {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 .wrapper.style6:before, .wrapper.style6:after {
@@ -3727,7 +3742,8 @@ body.is-preload #banner p {
   width: 55em;
   background-color: transparent;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
-  background-size: auto, cover;
+  background-size: auto,
+ cover;
 }
 
 #footer .inner > * {
@@ -3774,8 +3790,10 @@ body.is-preload #banner p {
 
 @media screen and (max-width: 1280px) {
   #footer {
-    background-size: auto, cover;
-    background-position: center, center;
+    background-size: auto,
+ cover;
+    background-position: center,
+ center;
     margin-top: -6.5em;
     padding-top: 6.5em;
   }
