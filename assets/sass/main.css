@@ -132,6 +132,11 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
   height: 30vh;
 }
 
+.textwrap {
+  float: right;
+  margin: 10px;
+}
+
 /* Type */
 body, input, select, textarea {
   color: #ffffff;
@@ -3374,7 +3379,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style2 .inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.7, #000000));
   background-size: auto,
  cover;
 }
@@ -3398,7 +3403,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style3 .inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.7, #000000));
   background-size: auto,
  cover;
 }
@@ -3422,7 +3427,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style4 .inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.7, #000000));
   background-size: auto,
  cover;
 }
@@ -3446,7 +3451,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style5 .inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.7, #000000));
   background-size: auto,
  cover;
 }
@@ -3470,7 +3475,7 @@ body.is-preload #banner p {
 }
 
 .wrapper.style6 .inner {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.7, #000000));
   background-size: auto,
  cover;
 }
@@ -3741,7 +3746,7 @@ body.is-preload #banner p {
   margin: 0 auto;
   width: 55em;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(80, 80, 80, 0.1)), color-stop(0.7, #757575));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(75, 83, 64, 0.1)), to(rgba(75, 83, 64, 0.1)), color-stop(0.1, #000000));
   background-size: auto,
  cover;
 }
@@ -3759,12 +3764,21 @@ body.is-preload #banner p {
   width: calc(50% - 1.5em);
 }
 
+#footer .inner .footerimage {
+  width: 100%;
+  bottom: 0;
+  padding: 0;
+  z-index: -1;
+  position: absolute;
+}
+
 #footer .inner .copyright {
   border-top: solid 2px rgba(255, 255, 255, 0.125);
   list-style: none;
   margin: 4em 0 2em 0;
   padding: 2em 0 0 0;
   width: 100%;
+  position: relative;
 }
 
 #footer .inner .copyright li {

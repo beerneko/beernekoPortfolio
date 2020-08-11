@@ -9,7 +9,7 @@
 	<title>Yuri's Web</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta property="og:image" content="//https://beernekoportfolio.netlify.app///images/oboeroLogo.png" />
+	<link rel="icon" href="/images/beernekofav.ico" type="image/png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/sass/main.css" />
 	<noscript>
@@ -35,10 +35,10 @@
 				<h2>Menu</h2>
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="#">Log In</a></li>
-					<li><a href="#">Sign Up</a></li>
+					<li><a href="https://nekonya.netlify.app/blog" target="_blank">Blog</a></li>
+					<li><a href="https://oboero3.azurewebsites.net/" target="_blank">Oboero</a></li>
+					<li><a href="https://nekonya.netlify.app/about" target="_blank">About Me</a></li>
+					<li><a href="https://nekonya.netlify.app/contact" target="_blank">Contact</a></li>
 				</ul>
 				<a href="#" class="close">Close</a>
 			</div>
@@ -48,8 +48,8 @@
 		<section id="banner">
 			<div class="inner">
 				<div class="logo"><span class="fas fa-feather-alt fa-5x"></span></div>
-				<h2 style="font-size: 3em;">Beerneko's Web site</h2>
-				<p style="padding-left:5em !important;font-size: 1em !important;">
+				<h2 style="font-size: 3em; margin-left: 1em;">Beerneko's Web site</h2>
+				<p style="padding-left:5em !important; font-size: 1em !important;">
 					Lives in the Cow Town. Honest and Reliable. 
 				</p>
 			</div>
@@ -169,23 +169,23 @@
 			</section>
 
 
-			<!-- Three -->
-			<section id="one" class="wrapper spotlight" style="background-image: url(images/tree.png);background-repeat: no-repeat;background-position: left; background-size: auto;">
+			<!-- Five -->
+			<section id="one" class="wrapper spotlight" style="background-image: url(images/tree.png);background-repeat: no-repeat;background-position: left; height:450px; background-size: auto;">
 				<div class="inner">
-					<ul class="nav flex-column">
-						<li class="nav-item bg-transparent">							
-							<img src="images/unl.png" width="40px"><p>University of Nebraska-Lincoln</p>
+					<ul class="nav flex-column m5">
+						<li class="nav-item bg-transparent">
+							<a href="http://asp.unl.edu">University of Nebraska<img src="images/unl.png" width="30px"></a>
+						</li>
+						<li class="nav-item bg-transparent">				
+							<a href="http://www.deq.state.ne.us/">Nebraska State Gov.<img src="images/NE.png" width="40px"></a>
 						</li>
 						<li class="nav-item bg-transparent">							
-							<img src="images/NE.png" width="60px"><p>Nebraska State Gov.</p>
-						</li>
-						<li class="nav-item bg-transparent">							
-							<img src="images/SupremeCourt.png" width="60px"><p>State Supreme Court</p>
+							<a href="https://supremecourt.nebraska.gov/">State Supreme Court<img src="images/SupremeCourt.png" width="60px"></a>
 						</li>
 					</ul>
 					<div class="container">
 						<div><h2 class="major" style="margin: 2em;">Beerneko's Web</h2>
-						<p style="margin: 2em;">"いつも少数精鋭の中で鍛えられてきました。"</p></div>
+						<p style="margin: 2em;">“　いつも少数精鋭の中で鍛えられてきました。　”</p></div>
 						<a href="https://nekonya.netlify.app/" class="special">Learn more</a>
 					<!-- <div class="spotlight" style="overflow:hidden;">
 						<video class="bg-video" src="images/video.mp4" loop muted autoplay></video>
@@ -220,23 +220,22 @@
 				<ul class="contact">
 					<li class="icon solid fa-home">
 						Beerneko<br />
-						Fort Worth, TX
 					</li>
 					<li class="icon solid fa-envelope">beerneko@yahoo.com</li>
 					<li class="icon solid fas fa-blog"><a href="https://nekonya.netlify.app/">Blog</a></li>
 					<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/yurikobingman/">LinkedIn</a></li>
 					<li><a href="https://www.microsoft.com/en-us/learning/mcsa-sql2016-database-development-certification.aspx" target="_blank" rel="noopener noreferrer">
-						<img src="images/MCSA.svg" alt="MCSA" style="width:4em;height:4em;margin:0.1em"/></a></li>
-					<li><a href="https://www.zend-zce.com/en/yellow-pages/ZEND028919" target="_blank" rel="noopener noreferrer">
+						<img src="images/MCSA.svg" alt="MCSA" style="width:4em;height:4em;margin:0.1em"/></a>
+					<a href="https://www.zend-zce.com/en/yellow-pages/ZEND028919" target="_blank" rel="noopener noreferrer">
 						<img src="images/zce.svg" alt="zce" style="width:4em;height:4em;margin:0.1em"/></a></li>
 				</ul>
 				<ul class="copyright">
+					<img class="footerimage" src="images/foot.png" />
 					<li>&copy; Beerneko All rights reserved.</li>
 					<li>Powered by Beerneko, Original Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</div>
 		</section>
-
 	</div>
 
 	<!-- Scripts -->
@@ -253,7 +252,7 @@
 			var $form = $(this);
 			$.post($form.attr("action"), $form.serialize()).then(function () {
 				alert("Thank you!");
-				$(this)[0].reset();
+				$(this).reset();
 			});
 		});	
 	</script>
